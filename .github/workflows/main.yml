@@ -19,4 +19,4 @@ jobs:
         run: |
           echo "This is a multiline script."
           echo "It can run multiple commands."
-          echo  ${{ EXAMPLE_VAR }}
+          echo  ${{ env.EXAMPLE_VAR }}
