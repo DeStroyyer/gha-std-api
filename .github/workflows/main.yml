@@ -15,8 +15,8 @@ jobs:
 
       - name: Run multiline script
         env :
-          EXAMPLE_VAR: ${ { secrets.SERVER_API_KEY } }
+          EXAMPLE_VAR: ${{ secrets.SERVER_API_KEY }}
         run: |
           echo "This is a multiline script."
           echo "It can run multiple commands."
-          echo "Each command is on a new line." "$EXAMPLE_VAR"
+          echo  ${{ EXAMPLE_VAR }}
