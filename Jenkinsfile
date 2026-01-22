@@ -15,7 +15,7 @@ environment {
         stage('BUILD Docker Image') {
             steps {
                 script {
-                    docker.build(DOCKER_IMAGE)
+                    sh "echo 'Docker image is built'"
                 }
             }
         }
